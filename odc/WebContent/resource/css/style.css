@@ -7,7 +7,7 @@
 body {
 	background: #EFEFEF ;
 	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 200;
 	color: #000000;
 }
@@ -19,7 +19,7 @@ a {
 }
 /* Header */
 #header-top {
-	height: 50px;
+	height: 40px;
 	width: 100%;
 	background-color: #373a40;
 	margin-bottom: 15px;
@@ -57,7 +57,7 @@ a {
 #logo {
 	width: 1200px;
 	height: 150px;
-	margin: 40px auto 30px auto;
+	margin: 30px auto 20px auto;
 	background-image: url("images/haru2.png");  
 	background-repeat: no-repeat;
 	background-position: center;
@@ -74,7 +74,7 @@ a {
 	overflow: hidden;
 	padding: 0px 0px;
 	margin: 0px auto 30px auto;
-	border-radius: 9px 9px 9px 9px;  
+	border-radius: 15px;  
 	margin-top: 30px; 
 	font-size: 18px;
 	color: #000000;
@@ -89,24 +89,25 @@ a {
 	list-style: none;
 	line-height: normal;
 	text-align: center;
+	height: 40px;
 }
 #menu li {
 	display: inline-block;
+	height : 36px;
 }
 #menu a {
 	display: block;
-	padding: 15px 40px 15px 40px;
+	padding: 9px 40px 15px 40px;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	color:#e9e9e9;
 	border: none;
 }
-#menu a:hover {
-	background-color: 
-	color: black;
+#menu li:hover {
+	border-bottom: 1px solid white;
 }
 /* footer */
 #footer {
@@ -121,21 +122,21 @@ a {
 	margin-top: 5px;
 }
 #footlogo img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 #footlogo {
 	float: left;
 }
 .info {
 	display: inline-block;
-	margin-top: 19px;
-	font-size: 15px;
+	margin-top: 10px;
+	font-size: 13px;
 	margin-left: 10px;
 }
 #cp {
 	clear: both;
-	font-size: 13px;
+	font-size: 12px;
 	padding-left: 6px;
 }
 #footerInner {
@@ -145,10 +146,24 @@ a {
 #footerInner a {
 	margin: 0 10px;
 	color: #e9e9e9;
-	font-size: 12px;
+	font-size: 11px;
 }
 /* 내용부분  */
 #body_tem {
 	background: yellow;
 	height: 800px;
+}
+.title-area {
+	font-size : 16px;
+	margin : 0 auto 60px;
+	text-align : left;
+	border-bottom: 2px solid;
+	height: 20px;
+	padding-bottom: 20px;
+	width: 700px;
+}
+.content_tem {
+	width: 1200px;
+	min-height: 400px;
+	margin: 70px auto;
 }

@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>하루살이</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/login.css">
 </head>
@@ -21,7 +21,7 @@
 
 <!--content  -->
 <div class="body_tem" style="border-top: 1px solid; ">
-	<div class="content_" style="width: 960px; min-height: 500px; margin: 0 auto;" >
+	<div class="content_" style="width: 1200px; min-height: 400px; margin: 0 auto;" >
 	
 		<!-- 여기부터 자기가 만드는거임!  -->
 		<div>
