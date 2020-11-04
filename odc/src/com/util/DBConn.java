@@ -48,7 +48,7 @@ public class DBConn {
 				Properties info = new Properties();
 				info.put("user", user);
 				info.put("password", pwd);
-				info.put("internal_logon", internal_logon);  // sysdba
+				info.put("internal_logon", internal_logon); 
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				conn = DriverManager.getConnection(url, info);
 			}catch (Exception e) {
