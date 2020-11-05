@@ -10,7 +10,7 @@
                 <ul>
                   <c:if test="${empty sessionScope.member}">  <%--로그인 안된 상태 --%>	
                     <li class="login2" style="padding-left: 70px"><a href="${pageContext.request.contextPath}/member/login.do">로그인&nbsp; &nbsp; &nbsp; &nbsp; |</a></li>
-                    <li class="login2"><a href="#">회원가입&nbsp; &nbsp; &nbsp; </a></li>
+                    <li class="login2"><a href="${pageContext.request.contextPath}/member/selectlog.do">회원가입&nbsp; &nbsp; &nbsp; </a></li>
                   </c:if>
                   <c:if test="${not empty sessionScope.member}">   <%--로그인 된 상태 --%>
                     <li class="login2" style="color: #fff;"><span style="color: #fff;">${sessionScope.member.userName}</span>님

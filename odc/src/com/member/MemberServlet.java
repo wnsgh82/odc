@@ -55,7 +55,9 @@ public class MemberServlet extends HttpServlet{
 			updateSubmit(req, resp);
 		} else if(uri.indexOf("userIdCheck.do")!=-1) {
 			userIdCheck(req, resp);
-		} 
+		}  else if(uri.indexOf("selectlog.do")!=-1) {
+			selectlogin(req, resp);
+		}
 
 	}
 	
@@ -202,6 +204,13 @@ public class MemberServlet extends HttpServlet{
 	
 	protected void userIdCheck(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//회원 아이디 중복 검사
+	}
+	
+	protected void selectlogin(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//회원가입 선택 
+		String path="/WEB-INF/views/member/selectlogin.jsp";
+		forward(req, resp, path);
+		
 	}
 
 }
