@@ -13,7 +13,7 @@ public class DBConn {
 	public static Connection getConnection() {
 		// String url="jdbc:oracle:thin:@127.0.0.1:1521:ORCL";
 		//String url="jdbc:oracle:thin:@127.0.0.1:1521:XE";
-		String url="jdbc:oracle:thin:@211.238.142.107/xe"; //포트번호, 포트아이디
+		String url="jdbc:oracle:thin:@localhost:1521/XE"; //포트번호, 포트아이디
 		String user="ejo";
 		String pwd="java$!";
 		
