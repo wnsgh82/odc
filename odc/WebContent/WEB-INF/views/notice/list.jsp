@@ -12,19 +12,22 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/notice.css">
 </head>
 <body>
 
+<!-- header -->
+<div class="header_tem">
+    <jsp:include page="/WEB-INF/views/layout/header.jsp"></jsp:include>
+</div>
+
 <section class="notice">
 <div class="inner">
    <div class="title-area">
+  	  <h3>&nbsp;&nbsp;&nbsp;&nbsp;회원가입</h3>
    </div>
-   <div class="lnb">
-      <ul class="both">
-         <li class="tab notice-tit"><a href="./notice-list.html">공지사항</a></li>
-      </ul>
-   </div>
+
    <div>
       <div class="board-notice">
          <ul class="article-table">
@@ -57,6 +60,11 @@
    </div>
 </div>
 </section> 
+
+<!-- footer -->
+<div class="footer_tem">
+    <jsp:include page="/WEB-INF/views/layout/footer.jsp"></jsp:include>
+</div>
 
 </body>
 </html>
