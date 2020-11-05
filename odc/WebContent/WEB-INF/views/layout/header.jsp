@@ -14,10 +14,10 @@
                   </c:if>
                   <c:if test="${not empty sessionScope.member}">   <%--로그인 된 상태 --%>
                     <li class="login2" style="color: #fff;"><span style="color: #fff;">${sessionScope.member.userName}</span>님
-                    &nbsp;| </li>
+                    &nbsp;&nbsp;&nbsp;| </li>
                     <li class="login2" style="color: #fff;"><a href="${pageContext.request.contextPath}/member/logout.do">로그아웃</a>
-                    &nbsp;| </li>
-                    <li class="login2"><a href="#">마이페이지</a></li>
+                    &nbsp;&nbsp;&nbsp;| </li>
+                    <li class="login2"><a href="${pageContext.request.contextPath}/mypage/mypageMain.do">마이페이지</a></li>
                   </c:if>
                 </ul>
             </div>

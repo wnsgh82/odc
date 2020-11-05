@@ -46,12 +46,12 @@ function sendLogin() {
 
 	
 	<!--content  -->
-<div class="body_tem" style="border-top: 1px solid; ">
-	<div class="content_" style="width: 960px; min-height: 500px; margin: 0 auto;" >
+<div class="body_tem">
+	<div class="content_tem">
 		
 		<!--login -->
        <div class="login">
-        <div class="login-title">
+        <div id="login_text">
             <h3>로그인</h3>
         </div>
         <form name="loginForm" method="post">

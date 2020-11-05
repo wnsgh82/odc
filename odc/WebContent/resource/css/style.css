@@ -45,7 +45,7 @@ a {
 	color: #e9e9e9;
 	margin-top: 9px ;
 	pointer-events: inherit;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 #header {
@@ -149,9 +149,8 @@ a {
 	font-size: 11px;
 }
 /* 내용부분  */
-#body_tem {
-	background: yellow;
-	height: 800px;
+.body_tem {
+	
 }
 .title-area {
 	font-size : 16px;
