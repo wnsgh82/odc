@@ -19,12 +19,15 @@
 </div>
 
 <!--content  -->
-<div class="body_tem" style="border-top: 1px solid; ">
-	<div class="content_" style="width: 960px; min-height: 500px; margin: 0 auto;" >
-	
-		<!-- 여기부터 자기가 만드는거임!  -->
-		<div>
+<div class="body_tem">
+	<div class="content_tem">
+		<div class="title-area">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;게시판이름</h3>
+		</div>
 		
+		<!-- 여기부터 자기가 만드는거임!  -->
+		<div id="">
+			
 		</div>
 	    
 	</div>

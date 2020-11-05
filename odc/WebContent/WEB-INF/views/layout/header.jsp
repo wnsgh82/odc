@@ -9,7 +9,7 @@
                 <div style="float: right;">
                 <ul>
                     <li class="login2"><a href="${pageContext.request.contextPath}/member/login.do">로그인&nbsp; &nbsp; &nbsp; &nbsp; |</a></li>
-                    <li class="login2"><a href="#">회원가입&nbsp; &nbsp; &nbsp; |</a></li>
+                    <li class="login2"><a href="${pageContext.request.contextPath}/member/member.do">회원가입&nbsp; &nbsp; &nbsp; |</a></li>
                     <li class="login2"><a href="#">마이페이지</a></li>
                 </ul>
             </div>

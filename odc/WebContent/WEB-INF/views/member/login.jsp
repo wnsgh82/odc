@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>하루살이</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/login.css">
 </head>
@@ -21,14 +21,14 @@
 
 	
 	<!--content  -->
-<div class="body_tem" style="border-top: 1px solid; ">
-	<div class="content_" style="width: 960px; min-height: 500px; margin: 0 auto;" >
+<div class="body_tem">
+	<div class="content_tem">
 		
 		<!--login -->
        <div class="login">
-        <div class="login-title">
+       	<div id="login_text">
             <h3>로그인</h3>
-        </div>
+       	</div>
         <form action="">
             <div class="login-box">
                 <input type="text" class="id" placeholder="아이디를 입력해주세요." id="loginID"value="">

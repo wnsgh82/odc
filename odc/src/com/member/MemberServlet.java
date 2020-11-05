@@ -37,15 +37,37 @@ public class MemberServlet extends HttpServlet {
 	         loginForm(req, resp);
 	      }else if(uri.indexOf("login_ok.do")!=-1) {
 	    	  
+	      }else if(uri.indexOf("member.do")!=-1) {
+	         memberForm(req, resp);
 	      }
 		
 	}
-	
 	protected void loginForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-     //로그인 폼
-    String path="/WEB-INF/views/member/login.jsp";
-    forward(req,resp,path);
+       //로그인 폼
+      String path="/WEB-INF/views/member/login.jsp";
+      forward(req,resp,path);
 
+	}
+	
+	protected void loginSubmit(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//로그인처리
+		
+	}
+	protected void logout(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// 로그아웃  -> 세션에 저장된 정보를 지우면됨
+	
+		
+	}
+	protected void memberForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      // 회원가입 폼 
+      req.setAttribute("mode", "member");
+      req.setAttribute("title", "회원 가입");
+      String path="/WEB-INF/views/member/member.jsp";
+      forward(req, resp, path);
+
+	}
+	protected void memberSubmit(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//회원가입 처리
 	}
 
 }
