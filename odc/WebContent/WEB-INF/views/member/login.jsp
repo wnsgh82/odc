@@ -7,9 +7,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>하루살이</title>
+<title>Insert title here</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/login.css">
+
+<script type="text/javascript">
+function sendLogin() {
+    var f = document.loginForm;
+
+	var str = f.userId.value;
+    if(!str) {
+        alert("아이디를 입력하세요. ");
+        f.userId.focus();
+        return;
+    }
+
+    str = f.userPwd.value;
+    if(!str) {
+        alert("패스워드를 입력하세요. ");
+        f.userPwd.focus();
+        return;
+    }
+
+    f.action = "${pageContext.request.contextPath}/member/login_ok.do";
+    f.submit();
+}
+
+</script>
+
 </head>
 <body>
 
@@ -21,21 +46,21 @@
 
 	
 	<!--content  -->
-<div class="body_tem">
-	<div class="content_tem">
+<div class="body_tem" style="border-top: 1px solid; ">
+	<div class="content_" style="width: 960px; min-height: 500px; margin: 0 auto;" >
 		
 		<!--login -->
        <div class="login">
-       	<div id="login_text">
+        <div class="login-title">
             <h3>로그인</h3>
-       	</div>
-        <form action="">
+        </div>
+        <form name="loginForm" method="post">
             <div class="login-box">
-                <input type="text" class="id" placeholder="아이디를 입력해주세요." id="loginID"value="">
-                <input type="password" class="pw" placeholder="비밀번호를 입력해주세요." id="loginPW">
+                <input type="text" class="id" placeholder="아이디를 입력해주세요." id="loginID" name="userId">
+                <input type="password" class="pw" placeholder="비밀번호를 입력해주세요." id="loginPW" name="userPwd">
 
                     <div class="btn-submit">
-                        <a onclick="">로그인</a>
+                        <a onclick="sendLogin();">로그인</a>
                     </div>
                     
                     <div class="find">
