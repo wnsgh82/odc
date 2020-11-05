@@ -25,7 +25,7 @@
 <section class="notice">
 <div class="inner">
    <div class="title-area">
-  	  <h3>&nbsp;&nbsp;&nbsp;&nbsp;회원가입</h3>
+  	  <h3>&nbsp;&nbsp;&nbsp;&nbsp;공지사항</h3>
    </div>
 
    <div>
